@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Commentform</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navmenu">
+            <ul class="navmenuul">
+                <li class="navmenu-el"><a href="index.html" class="navmenu-el-a">Головна</a></li>
+                <li class="navmenu-el"> <a href="table.html" class="navmenu-el-a">Таблиця</a></li>
+                <li class="navmenu-el"> <a href="regform.html" class="navmenu-el-a">Реєстрація</a></li>
+                <li class="navmenu-el"><a href="coment.html" class="navmenu-el-a">Коментар</a></li>
+            </ul>
+        </nav>
+    </header>
+    <aside class="sidebar">
+        <ul>
+            <li><a href="#feedbackForm">Залишити коментар</a></li>
+        </ul>
+    </aside>
+    <main>
+        <section>
+            <h2>Залишити коментар</h2>
+            <form id="feedbackForm" method="post">
+                <div>
+                    <label for="name">Ваше ім'я:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+
+
+                <div>
+                    <label for="email">Ваш Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div>
+                    <label for="comment">Ваш коментар:</label>
+                    <textarea id="comment" name="comment" rows="4"></textarea>
+                </div>
+
+
+                <div class="error" id="formError">Будь ласка, заповніть усі поля.</div>
+
+                <button type="submit">Надіслати</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <a href="https://www.letbyheart.com/privacy-policy/">Політика конфіденційності </a>
+            <a href="https://www.letbyheart.com/dogovir-oferta/">Договір оферта</a>
+            <p>З питань підтримки звертайтесь на пошту:
+                <a href="support@letbyheart.com">support@letbyheart.com</a>
+            </p>
+            <p>© Copyright Learn and Teach by Heart 2023</p>
+        </div>
+    </footer>
+</body>
+
+</html>
